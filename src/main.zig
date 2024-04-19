@@ -27,5 +27,6 @@ fn timerCallback(
     result: xev.Timer.RunError!void,
 ) xev.CallbackAction {
     _ = result catch unreachable;
+    std.debug.print("timerCallback called\n", .{});
     return .disarm;
 }
