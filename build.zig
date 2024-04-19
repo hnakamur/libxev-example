@@ -36,8 +36,8 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
 
-    const xev = b.dependency("libxev", .{ .target = target, .optimize = optimize });
-    exe.addModule("xev", xev.module("xev"));
+    const xev_module = b.dependency("libxev", .{ .target = target, .optimize = optimize }).module("xev");
+    exe.root_module.addImport("xev", xev_module);
 
     // This declares intent for the executable to be installed into the
     // standard location when the user invokes the "install" step (the default

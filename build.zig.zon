@@ -16,8 +16,8 @@
     // internet connectivity.
     .dependencies = .{
         .libxev = .{
-            .url = "https://github.com/mitchellh/libxev/archive/0f73adfda1cff9c740160717b5431ebada6b8755.tar.gz",
-            .hash = "12203dcbe098ee49ea242432cd198b1ca557626988f056bea86630dcfe8660244407",
+            .url = "https://github.com/mitchellh/libxev/archive/a284cf85.tar.gz",
+            .hash = "12205b8ea5495b812b9a8943535a7af8da556644d2c1599dc01e1a5ea7aaf59bb2c7",
         },
     },
     .paths = .{
